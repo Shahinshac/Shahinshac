@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 150" width="100%" height="150" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+
+    <!-- Subtle Accent Glow -->
+    <radialGradient id="cyanGlow" cx="90%" cy="10%" r="55%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="indigoGlow" cx="10%" cy="90%" r="55%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Typography Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <style>
+      .font-sans {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      }
+      .badge-text {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        fill: #38bdf8;
+      }
+      .title-text {
+        font-size: 34px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        fill: url(#textGrad);
+      }
+      .subtitle-text {
+        font-size: 18px;
+        font-weight: 500;
+        fill: #94a3b8;
+      }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="848" height="148" x="1" y="1" rx="14" fill="url(#bgGrad)" stroke="#30363d" stroke-width="1.2" />
+  <rect width="848" height="148" x="1" y="1" rx="14" fill="url(#cyanGlow)" />
+  <rect width="848" height="148" x="1" y="1" rx="14" fill="url(#indigoGlow)" />
+
+  <!-- Inner Content (Optimized for Mobile & Desktop Readability) -->
+  <g transform="translate(42, 30)" class="font-sans">
+    <!-- Role Pill / Badge -->
+    <rect width="230" height="26" rx="13" fill="#0369a1" fill-opacity="0.25" stroke="#0284c7" stroke-width="0.8" stroke-opacity="0.5"/>
+    <circle cx="15" cy="13" r="4" fill="#38bdf8" />
+    <text x="28" y="17.5" class="badge-text">Full-Stack Developer</text>
+
+    <!-- Name Heading (Large, High Contrast) -->
+    <text x="0" y="66" class="title-text">SHAHIN SHA CHAKKINGATHODI</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="98" class="subtitle-text">B.Tech Computer Science Student</text>
+  </g>
+</svg>
