@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 44" width="100%" height="44" fill="none">
+  <defs>
+    <style>
+      .mono {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+      .label-tag {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        fill: #64748b;
+      }
+      .node-text {
+        font-size: 12.5px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        fill: #e2e8f0;
+      }
+      .arrow-line {
+        stroke: #334155;
+        stroke-width: 1.5;
+        stroke-dasharray: 4 3;
+      }
+      .arrow-head {
+        fill: #475569;
+      }
+    </style>
+  </defs>
+
+  <!-- Container Box matching Header & Typing aesthetics -->
+  <rect width="718" height="42" x="1" y="1" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1.2" />
+
+  <g class="mono">
+    <!-- Left Section Tag -->
+    <text x="24" y="23" dominant-baseline="central" class="label-tag">DevOps Cycle</text>
+    <line x1="130" y1="12" x2="130" y2="32" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Node 1: Learning -->
+    <g transform="translate(155, 0)">
+      <circle cx="10" cy="22" r="4" fill="#38bdf8">
+        <animate attributeName="r" values="4;5.2;4;4" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.2;0.4;1" />
+        <animate attributeName="opacity" values="0.55;1;0.55;0.55" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.2;0.4;1" />
+      </circle>
+      <text x="22" y="23" dominant-baseline="central" class="node-text">Learning</text>
+    </g>
+
+    <!-- Connector 1 (Learning -> Building) -->
+    <line x1="255" y1="22" x2="330" y2="22" class="arrow-line" />
+    <polygon points="330,19 336,22 330,25" class="arrow-head" />
+    <circle cx="255" cy="22" r="2.5" fill="#38bdf8">
+      <animate attributeName="cx" values="255;255;330;330" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.1;0.45;1" />
+      <animate attributeName="opacity" values="0;0.9;0.9;0;0" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.12;0.42;0.46;1" />
+    </circle>
+
+    <!-- Node 2: Building -->
+    <g transform="translate(355, 0)">
+      <circle cx="10" cy="22" r="4" fill="#818cf8">
+        <animate attributeName="r" values="4;4;5.2;4;4" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.4;0.6;0.8;1" />
+        <animate attributeName="opacity" values="0.55;0.55;1;0.55;0.55" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.4;0.6;0.8;1" />
+      </circle>
+      <text x="22" y="23" dominant-baseline="central" class="node-text">Building</text>
+    </g>
+
+    <!-- Connector 2 (Building -> Deploying) -->
+    <line x1="450" y1="22" x2="525" y2="22" class="arrow-line" />
+    <polygon points="525,19 531,22 525,25" class="arrow-head" />
+    <circle cx="450" cy="22" r="2.5" fill="#818cf8">
+      <animate attributeName="cx" values="450;450;525;525" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.5;0.85;1" />
+      <animate attributeName="opacity" values="0;0;0.9;0.9;0" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.5;0.52;0.82;0.86;1" />
+    </circle>
+
+    <!-- Node 3: Deploying -->
+    <g transform="translate(550, 0)">
+      <circle cx="10" cy="22" r="4" fill="#34d399">
+        <animate attributeName="r" values="4;4;5.2;4" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.8;0.95;1" />
+        <animate attributeName="opacity" values="0.55;0.55;1;0.55" dur="4.5s" repeatCount="indefinite" keyTimes="0;0.8;0.95;1" />
+      </circle>
+      <text x="22" y="23" dominant-baseline="central" class="node-text">Deploying</text>
+    </g>
+  </g>
+</svg>

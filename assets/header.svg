@@ -57,9 +57,15 @@
   </defs>
 
   <!-- Container Box with Hairline Slate Border -->
-  <rect width="918" height="168" x="1" y="1" rx="14" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.2" />
-  <rect width="918" height="168" x="1" y="1" rx="14" fill="url(#cyanGlow)" />
-  <rect width="918" height="168" x="1" y="1" rx="14" fill="url(#indigoGlow)" />
+  <rect width="918" height="168" x="1" y="1" rx="14" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.2">
+    <animate attributeName="stroke" values="#1e293b;#334155;#1e293b" dur="8s" repeatCount="indefinite" />
+  </rect>
+  <rect width="918" height="168" x="1" y="1" rx="14" fill="url(#cyanGlow)">
+    <animate attributeName="opacity" values="0.75;1;0.75" dur="8s" repeatCount="indefinite" />
+  </rect>
+  <rect width="918" height="168" x="1" y="1" rx="14" fill="url(#indigoGlow)">
+    <animate attributeName="opacity" values="0.7;0.95;0.7" dur="10s" repeatCount="indefinite" />
+  </rect>
 
   <!-- Content Group -->
   <g transform="translate(46, 30)" class="font-sans">
@@ -67,13 +73,19 @@
     <g transform="translate(0, 0)">
       <!-- Primary Badge: Full-Stack Developer -->
       <rect width="202" height="24" rx="12" fill="#0369a1" fill-opacity="0.22" stroke="#0284c7" stroke-width="0.8" stroke-opacity="0.5"/>
-      <circle cx="13" cy="12" r="3.5" fill="#38bdf8" />
+      <circle cx="13" cy="12" r="3.5" fill="#38bdf8">
+        <animate attributeName="r" values="3.5;4.2;3.5" dur="3.2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite" />
+      </circle>
       <text x="25" y="16.2" class="badge-primary">Full-Stack Developer</text>
 
       <!-- Secondary Learning Badge: Exploring DevOps -->
       <g transform="translate(212, 0)">
         <rect width="186" height="24" rx="12" fill="#4338ca" fill-opacity="0.2" stroke="#6366f1" stroke-width="0.8" stroke-opacity="0.45"/>
-        <circle cx="13" cy="12" r="3.5" fill="#818cf8" />
+        <circle cx="13" cy="12" r="3.5" fill="#818cf8">
+          <animate attributeName="r" values="3.5;4.2;3.5" dur="3.6s" begin="0.6s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.55;1;0.55" dur="3.6s" begin="0.6s" repeatCount="indefinite" />
+        </circle>
         <text x="25" y="16.2" class="badge-secondary">Exploring DevOps</text>
       </g>
     </g>

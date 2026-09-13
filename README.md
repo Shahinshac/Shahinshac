@@ -1,6 +1,10 @@
 <div align="center">
   <img src="assets/header.svg" alt="SHAHIN SHA CHAKKINGATHODI - Header Banner" width="100%" />
 
+  <br /><br />
+
+  <img src="assets/typing.svg" alt="Dynamic Role and Focus Areas" width="520" />
+
   <br />
 
   <p align="center">
@@ -34,6 +38,12 @@ Alongside full-stack engineering, I am actively expanding my skillset into **Dev
 ---
 
 ### Currently Learning &amp; Exploring (DevOps &amp; Cloud)
+
+<div align="center">
+  <img src="assets/devops-pipeline.svg" alt="DevOps Learning &amp; Exploration Pipeline" width="100%" />
+</div>
+
+<br />
 
 I am actively strengthening my infrastructure and operational foundations to bridge the gap between software development and production delivery:
 
