@@ -25,15 +25,24 @@
   Learning Path:  DevOps Fundamentals (Docker, CI/CD, Linux, Containerization)
   Focus Areas:    Modular Web Architectures, Real-Time Data Handling, System Reliability
   Location:       Kerala, India
+  Portfolio:      https://shahinshac.vercel.app
 ```
+
+---
+
+### 🌐 Portfolio
+
+Explore my interactive live portfolio, project case studies, and engineering journey:
+
+&rarr; **[Visit My Portfolio — shahinshac.vercel.app](https://shahinshac.vercel.app)**
 
 ---
 
 ### About Me
 
-I am a **Computer Science undergraduate** and **Full-Stack Developer** based in Kerala, India. My engineering work centers on building practical, full-lifecycle software systems—from database modeling and secure backend APIs to reactive, accessible client applications.
+Hi, I'm **Shahin Sha Chakkingathodi** ([@Shahinshac](https://github.com/Shahinshac)), a Computer Science engineering student and full-stack developer currently exploring Cloud & DevOps based in Kerala, India. My engineering work centers on building practical, full-lifecycle software systems—from database modeling and secure backend APIs to reactive, accessible client applications.
 
-Alongside full-stack engineering, I am actively expanding my skillset into **DevOps and cloud infrastructure**. I focus on understanding containerization with Docker, setting up automated CI/CD pipelines, and establishing dependable application delivery practices.
+Alongside full-stack engineering, I am actively expanding my technical foundations in **DevOps and cloud infrastructure**. I focus on understanding containerization with Docker, setting up automated CI/CD pipelines with GitHub Actions, and establishing dependable application delivery practices.
 
 ---
 
@@ -184,6 +193,8 @@ An automated static analysis system that inspects code maintainability, calculat
 
 I am always open to discussing software architecture, systems engineering, and collaborative technical projects.
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-shahinshac.vercel.app-000000?style=flat&logo=vercel&logoColor=white)](https://shahinshac.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-shahinshac-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahinshac)
 [![GitHub](https://img.shields.io/badge/GitHub-Shahinshac-181717?style=flat&logo=github&logoColor=white)](https://github.com/Shahinshac)
 [![X](https://img.shields.io/badge/X-@shaahn__c-000000?style=flat&logo=x&logoColor=white)](https://x.com/shaahn_c)
 [![Instagram](https://img.shields.io/badge/Instagram-@shaahn__c-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/shaahn_c)
@@ -191,5 +202,7 @@ I am always open to discussing software architecture, systems engineering, and c
 
 <br />
 
+* 🌐 **Portfolio:** [shahinshac.vercel.app](https://shahinshac.vercel.app)
+* 💼 **LinkedIn:** [shahinshac](https://www.linkedin.com/in/shahinshac)
 * 📍 **Location:** Kerala, India
 * 💬 *Open to contributing to open-source software, technical discussions, and software engineering opportunities.*
