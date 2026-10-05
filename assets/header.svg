@@ -1,99 +1,143 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 170" width="100%" height="170" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="100%" height="220" fill="none">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090d16" />
-      <stop offset="50%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#090d16" />
+    <!-- Background Gradients -->
+    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050B14" />
+      <stop offset="50%" stop-color="#0A1628" />
+      <stop offset="100%" stop-color="#050B14" />
     </linearGradient>
 
-    <!-- Subtle Accent Radial Glows -->
-    <radialGradient id="cyanGlow" cx="92%" cy="15%" r="60%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    <!-- Neon Glow Accents -->
+    <radialGradient id="cyanGlow" cx="85%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="indigoGlow" cx="8%" cy="85%" r="60%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.18" />
-      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    
+    <radialGradient id="indigoGlow" cx="15%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Text Gradient for Name -->
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#e2e8f0" />
+    <!-- Metallic Gradient for Text -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#E2E8F0" />
+      <stop offset="80%" stop-color="#2DD4BF" />
+      <stop offset="100%" stop-color="#38BDF8" />
     </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.4" />
+    </pattern>
 
     <style>
-      .font-sans {
+      .font-main {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       }
-      .badge-primary {
-        font-size: 11.5px;
-        font-weight: 700;
-        letter-spacing: 1.2px;
-        text-transform: uppercase;
-        fill: #38bdf8;
+      .font-mono {
+        font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       }
-      .badge-secondary {
+      .name-title {
+        font-size: 38px;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        fill: url(#textGrad);
+      }
+      .sub-title {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        fill: #94A3B8;
+      }
+      .badge-text {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .tag-pill {
         font-size: 11.5px;
         font-weight: 600;
-        letter-spacing: 1.1px;
-        text-transform: uppercase;
-        fill: #a5b4fc;
-      }
-      .title-text {
-        font-size: 34px;
-        font-weight: 800;
-        letter-spacing: 0.6px;
-        fill: url(#nameGrad);
-      }
-      .subtitle-text {
-        font-size: 16px;
-        font-weight: 450;
-        letter-spacing: 0.2px;
-        fill: #94a3b8;
+        fill: #E2E8F0;
       }
     </style>
   </defs>
 
-  <!-- Container Box with Hairline Slate Border -->
-  <rect width="918" height="168" x="1" y="1" rx="14" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.2">
-    <animate attributeName="stroke" values="#1e293b;#334155;#1e293b" dur="8s" repeatCount="indefinite" />
-  </rect>
-  <rect width="918" height="168" x="1" y="1" rx="14" fill="url(#cyanGlow)">
-    <animate attributeName="opacity" values="0.75;1;0.75" dur="8s" repeatCount="indefinite" />
-  </rect>
-  <rect width="918" height="168" x="1" y="1" rx="14" fill="url(#indigoGlow)">
-    <animate attributeName="opacity" values="0.7;0.95;0.7" dur="10s" repeatCount="indefinite" />
+  <!-- Container Box with Glowing Border -->
+  <rect width="958" height="218" x="1" y="1" rx="16" fill="url(#cyberBg)" stroke="#1E293B" stroke-width="1.5">
+    <animate attributeName="stroke" values="#1E293B;#2DD4BF;#38BDF8;#1E293B" dur="10s" repeatCount="indefinite" />
   </rect>
 
-  <!-- Content Group -->
-  <g transform="translate(46, 30)" class="font-sans">
-    <!-- Role Badges (Full-Stack + Exploring DevOps) -->
+  <!-- Grid Overlay -->
+  <rect width="958" height="218" x="1" y="1" rx="16" fill="url(#grid)" />
+
+  <!-- Ambient Glows -->
+  <rect width="958" height="218" x="1" y="1" rx="16" fill="url(#cyanGlow)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite" />
+  </rect>
+  <rect width="958" height="218" x="1" y="1" rx="16" fill="url(#indigoGlow)">
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="8s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Decorative Top Right HUD Element -->
+  <g transform="translate(730, 24)" class="font-mono">
+    <rect width="180" height="24" rx="12" fill="#0F172A" stroke="#2DD4BF" stroke-width="0.8" stroke-opacity="0.6"/>
+    <circle cx="14" cy="12" r="4" fill="#2DD4BF">
+      <animate attributeName="r" values="3.5;5;3.5" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="26" y="15.5" font-size="10" font-weight="700" fill="#2DD4BF" letter-spacing="0.5">STATUS: READY TO BUILD</text>
+  </g>
+
+  <!-- Left Window Controls -->
+  <g transform="translate(42, 28)">
+    <circle cx="0" cy="0" r="5" fill="#EF4444" />
+    <circle cx="16" cy="0" r="5" fill="#F59E0B" />
+    <circle cx="32" cy="0" r="5" fill="#10B981" />
+  </g>
+
+  <!-- Content Elements -->
+  <g transform="translate(42, 60)" class="font-main">
+    <!-- Role Badges -->
     <g transform="translate(0, 0)">
-      <!-- Primary Badge: Full-Stack Developer -->
-      <rect width="202" height="24" rx="12" fill="#0369a1" fill-opacity="0.22" stroke="#0284c7" stroke-width="0.8" stroke-opacity="0.5"/>
-      <circle cx="13" cy="12" r="3.5" fill="#38bdf8">
-        <animate attributeName="r" values="3.5;4.2;3.5" dur="3.2s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite" />
-      </circle>
-      <text x="25" y="16.2" class="badge-primary">Full-Stack Developer</text>
+      <!-- Badge 1: Full-Stack Developer -->
+      <rect width="190" height="26" rx="13" fill="#0D9488" fill-opacity="0.2" stroke="#2DD4BF" stroke-width="0.9" stroke-opacity="0.7"/>
+      <text x="14" y="17" class="badge-text" fill="#2DD4BF">⚡ Full-Stack Developer</text>
 
-      <!-- Secondary Learning Badge: Exploring DevOps -->
-      <g transform="translate(212, 0)">
-        <rect width="186" height="24" rx="12" fill="#4338ca" fill-opacity="0.2" stroke="#6366f1" stroke-width="0.8" stroke-opacity="0.45"/>
-        <circle cx="13" cy="12" r="3.5" fill="#818cf8">
-          <animate attributeName="r" values="3.5;4.2;3.5" dur="3.6s" begin="0.6s" repeatCount="indefinite" />
-          <animate attributeName="opacity" values="0.55;1;0.55" dur="3.6s" begin="0.6s" repeatCount="indefinite" />
-        </circle>
-        <text x="25" y="16.2" class="badge-secondary">Exploring DevOps</text>
+      <!-- Badge 2: DevOps & Cloud -->
+      <g transform="translate(202, 0)">
+        <rect width="190" height="26" rx="13" fill="#4338CA" fill-opacity="0.2" stroke="#818CF8" stroke-width="0.9" stroke-opacity="0.7"/>
+        <text x="14" y="17" class="badge-text" fill="#A5B4FC">🐳 DevOps &amp; Cloud</text>
+      </g>
+
+      <!-- Badge 3: B.Tech CSE -->
+      <g transform="translate(404, 0)">
+        <rect width="165" height="26" rx="13" fill="#1E293B" fill-opacity="0.6" stroke="#475569" stroke-width="0.9"/>
+        <text x="14" y="17" class="badge-text" fill="#CBD5E1">🎓 B.Tech CSE</text>
       </g>
     </g>
 
-    <!-- Name Heading -->
-    <text x="0" y="68" class="title-text">SHAHIN SHA CHAKKINGATHODI</text>
+    <!-- Name Headline -->
+    <text x="0" y="68" class="name-title">SHAHIN SHA CHAKKINGATHODI</text>
 
     <!-- Subtitle Line -->
-    <text x="0" y="102" class="subtitle-text">B.Tech Computer Science Student  •  Building Resilient Systems &amp; Modern Web Architectures</text>
+    <text x="0" y="98" class="sub-title">Engineering Scalable Real-Time Architectures, Modern Web Applications &amp; Automated CI/CD Pipelines</text>
+    
+    <!-- Tech Tag Pills Bar -->
+    <g transform="translate(0, 116)" class="font-mono">
+      <text x="0" y="12" font-size="11" fill="#64748B" font-weight="600">> STACK:</text>
+      <text x="65" y="12" font-size="11.5" fill="#38BDF8" font-weight="600">TypeScript</text>
+      <text x="145" y="12" font-size="11.5" fill="#64748B">•</text>
+      <text x="160" y="12" font-size="11.5" fill="#38BDF8" font-weight="600">React / Next.js</text>
+      <text x="270" y="12" font-size="11.5" fill="#64748B">•</text>
+      <text x="285" y="12" font-size="11.5" fill="#38BDF8" font-weight="600">NestJS / Node</text>
+      <text x="390" y="12" font-size="11.5" fill="#64748B">•</text>
+      <text x="405" y="12" font-size="11.5" fill="#38BDF8" font-weight="600">Python Flask</text>
+      <text x="500" y="12" font-size="11.5" fill="#64748B">•</text>
+      <text x="515" y="12" font-size="11.5" fill="#38BDF8" font-weight="600">PostgreSQL</text>
+      <text x="600" y="12" font-size="11.5" fill="#64748B">•</text>
+      <text x="615" y="12" font-size="11.5" fill="#2DD4BF" font-weight="600">Docker</text>
+    </g>
   </g>
 </svg>
