@@ -55,7 +55,7 @@
 │  • Primary Roles:   Full-Stack Developer  |  B.Tech Computer Science Student                  │
 │  • Engineering:     Real-Time Distributed Architectures, Database Modeling, REST / WebSockets │
 │  • Core Languages:  TypeScript, JavaScript (ESNext), Python, SQL, C#, Java                    │
-│  • Frameworks:      React 19, Next.js, Vite, NestJS, Node.js, Express, Python Flask          │
+│  • Frameworks:      React 19, Next.js, FastAPI, Vite, NestJS, Node.js, Python Flask           │
 │  • DevOps & Cloud:  Docker, Docker Compose, GitHub Actions CI/CD, Linux CLI, Vercel           │
 │  • Location:        Kerala, India 🇮🇳                                                          │
 │  • Portfolio:       https://shahinshac.vercel.app                                             │
@@ -75,7 +75,7 @@
 
 I am actively bridging the gap between software development and automated production operations:
 
-* 🐳 **Containerization:** Writing clean multi-stage `Dockerfile` configurations and orchestrating multi-service environments with **Docker Compose** (NestJS, Flask, PostgreSQL, React).
+* 🐳 **Containerization:** Writing clean multi-stage `Dockerfile` configurations and orchestrating multi-service environments with **Docker Compose** (NestJS, FastAPI, Flask, PostgreSQL, React).
 * ⚙️ **CI/CD Automation:** Setting up automated testing, linting, and branch verification workflows using **GitHub Actions**.
 * 🐧 **Linux &amp; Shell Automation:** Daily proficiency in Linux administration, bash scripting, and process management.
 * 🚀 **Cloud Deployments:** Configuring and maintaining production deployments on **Vercel** with SPA routing, build optimizations, and environment isolation.
@@ -96,7 +96,7 @@ I am actively bridging the gap between software development and automated produc
 [![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
 #### 🎨 Frontend Architecture
-[![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -105,11 +105,11 @@ I am actively bridging the gap between software development and automated produc
 
 #### ⚙️ Backend &amp; Real-Time APIs
 [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)](https://nestjs.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
 [![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white)](https://socket.io/)
-[![REST APIs](https://img.shields.io/badge/REST-APIs-0052CC?style=flat-square&logo=fastapi&logoColor=white)](https://restfulapi.net/)
 
 #### 🗄️ Databases &amp; ORMs
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
@@ -130,6 +130,32 @@ I am actively bridging the gap between software development and automated produc
 ---
 
 ### 🏆 Featured Engineering Showcases
+
+#### 🤖 [AI Resume Screening &amp; Candidate Ranking Platform](https://github.com/Shahinshac/AI-Resume-screening)
+> **Academic &amp; Production-Grade Machine Learning / NLP System** for automated resume parsing, semantic candidate recommendation, skill gap identification, and recruitment analytics.
+
+* **Tech Stack:** `Python` &bull; `FastAPI` &bull; `React 19` &bull; `Scikit-Learn` &bull; `NLP / TF-IDF` &bull; `Docker Compose`
+* **Architecture:** Supervised ML classification and Explainable AI (XAI) engine trained on empirical datasets with zero test-set leakage, containerized via Docker Compose.
+* **Key Capabilities:**
+  * **Supervised Classification:** Multi-model classification benchmarked across real-world candidate profiles.
+  * **Skill Gap Identification:** Semantic similarity matching scoring applicant compatibility and highlighting missing domain requirements.
+  * **Explainable AI (XAI):** Detailed factor breakdown providing recruitment teams with transparent scoring rationale.
+* 🔗 **Repository:** [github.com/Shahinshac/AI-Resume-screening](https://github.com/Shahinshac/AI-Resume-screening)
+
+<br/>
+
+#### 🏢 [CoreERP Enterprise Platform](https://github.com/Shahinshac/CoreERP)
+> **Comprehensive Enterprise Resource Planning &amp; Customer Portal Monorepo** delivering financial calculation engines, ledger accounting, and end-to-end business workflows.
+
+* **Tech Stack:** `FastAPI` &bull; `Python` &bull; `React` &bull; `PostgreSQL` &bull; `Render` &bull; `E2E Workflows`
+* **Architecture:** Modular monorepo featuring a high-throughput Python FastAPI backend and a responsive React client interface with automated workflow verification.
+* **Key Capabilities:**
+  * **Financial Engines:** Verified accounting logic, financial balance calculation, and ledger operations.
+  * **Customer Portal &amp; ERP Desk:** Integrated modules for client management, order fulfillment, and administrative control.
+  * **E2E Test Pipelines:** Automated test suites verifying end-to-end ERP operations prior to production delivery.
+* 🔗 **Repository:** [github.com/Shahinshac/CoreERP](https://github.com/Shahinshac/CoreERP)
+
+<br/>
 
 #### 🏥 [HospitalOS + PharmacyERP](https://github.com/Shahinshac/HospitalOs)
 > **Enterprise Hospital Information &amp; Pharmacy ERP Platform** engineered for clinical workflows, bed management, and automated batch tracking.
